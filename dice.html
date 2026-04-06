@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Кості</title>
+<link rel="stylesheet" href="style.css">
+<script src="wallet.js"></script>
+<script src="dice.js"></script>
+</head>
+
+<body>
+
+<h1>🎲 Гральні кості</h1>
+
+<div class="balance">
+💰 Баланс: <span class="balanceValue"></span>
+</div>
+
+<div id="dice1" class="dice"></div>
+<div id="dice2" class="dice"></div>
+
+<br>
+
+<select id="guess">
+<option value="more">Більше 7</option>
+<option value="less">Менше 7</option>
+<option value="seven">Рівно 7</option>
+</select>
+
+<br>
+
+<button onclick="rollDice()">Кинути</button>
+
+<p id="result"></p>
+
+<button onclick="location.href='tables.html'">⬅ Назад</button>
+
+</body>
+</html>

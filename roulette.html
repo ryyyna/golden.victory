@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Рулетка</title>
+<link rel="stylesheet" href="style.css">
+<script src="wallet.js"></script>
+<script src="roulette.js"></script>
+</head>
+
+<body>
+
+<h1>🎡 Рулетка</h1>
+
+<div class="balance">
+💰 Баланс: <span class="balanceValue"></span>
+</div>
+
+<canvas id="wheelCanvas" width="420" height="420"></canvas>
+
+<br>
+
+<select id="colorBet">
+<option value="">Колір</option>
+<option value="red">Червоне</option>
+<option value="black">Чорне</option>
+</select>
+
+<select id="evenBet">
+<option value="">Парність</option>
+<option value="even">Парне</option>
+<option value="odd">Непарне</option>
+</select>
+
+<input id="numberBet" placeholder="Число 0-36">
+
+<br>
+
+<button onclick="spinRoulette()">Крутити рулетку</button>
+
+<p id="result"></p>
+
+<button onclick="location.href='tables.html'">⬅ Назад</button>
+
+</body>
+</html>
